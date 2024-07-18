@@ -1,0 +1,481 @@
+body {
+    margin: 0;
+    background-color: #343434;
+    color: white;
+}
+
+input {
+    border: none;
+    background-color: white;
+    padding: 0;
+}
+
+.fileInfo:first-child {
+    width: 40%;
+}
+
+#folders {
+    display: flex;
+    flex-flow: column;
+    width: 165px;
+    padding-right: 15px;
+    border-right: white solid 2px;
+
+
+}
+
+#folders>input:last-child:hover{
+    background-color: green;
+    color: white;
+    transition: 300ms;
+}
+
+#filesystem {
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    max-width: 1000px;
+    position: absolute;
+    left: 60px;
+    top: 130px;
+}
+
+#funcCont {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+}
+
+#authRegPageCont {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: fit-content;
+    position: absolute;
+    top: 260px;
+    left: 1016px;
+    border: white solid 2px;
+}
+
+.navButtonCont {
+    width: 100%;
+    margin: 0;
+    display: flex;
+
+    justify-self: flex-start;
+}
+
+
+.navButton {
+    width: 50%;
+    height: 30px;
+    color: black;
+    background-color: white;
+}
+
+.navButton:hover, #authForm > input:hover {
+    border-bottom: white solid 2px;
+    background-color: #343434;
+    color: white;
+}
+
+.navButtonSelected {
+    width: 50%;
+    height: 30px;
+    border-bottom: white solid 2px;
+    background-color: #343434;
+    color: white;
+}
+
+.formCont {
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+
+    justify-self: flex-end;
+}
+
+.formCont > input {
+    height: 30px;
+    width: 100%;
+
+    border-bottom: white solid 2px;
+    background-color: #343434;
+    color: white;
+}
+
+#authForm, #regform {
+    display: flex;
+    min-height: 150px;
+    flex-direction: column;
+
+    justify-content: flex-end;
+}
+
+#authForm > input, #regform > input {
+    height: 40px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+#logo {
+    width: 400px;
+    height: fit-content;
+
+    position: absolute;
+    top: 260px;
+    left: 224px;
+}
+
+#logo_main {
+    width: 350px;
+    height: fit-content;
+
+    position: absolute;
+    top: 143px;
+    left: 1100px;
+}
+
+#logo > img, #logo_main>img {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    border-bottom: white solid 2px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+
+    background-color: #232323;
+}
+
+#header_left {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-left: 60px;
+}
+
+#header_left > div {
+    height: min-content;
+    font-size: 35px;
+    font-family: "Century Gothic", serif;
+}
+
+#header_left > div > span {
+    height: min-content;
+    font-size: 20px;
+}
+
+#logout {
+    height: 100%;
+}
+
+#logout > input {
+    background-color: red;
+    color: white;
+    width: 120px;
+    height: 100%;
+    transition: 300ms;
+}
+
+#logout>input:hover{
+    font-size: 30px;
+    background-color: white;
+    color: red;
+    transition: 300ms;
+}
+
+
+
+#funcCont {
+    width: 100%;
+}
+
+.fileInfo {
+    min-width: 50px;
+}
+
+#filesTable {
+    width: fit-content;
+    border-spacing: 0;
+}
+
+.fileRow:first-child > td {
+    border-top: white solid 2px;
+}
+
+
+.fileRow > .fileInfo:first-child {
+    width: 200px;
+}
+
+
+
+#folders > input {
+    height: 35px;
+    margin-bottom: 3px;
+    transition: 300ms;
+}
+
+#folders>input:first-child{
+    margin-top: 2px;
+}
+
+#folders > input:hover {
+    background-color: #343434;
+    color: white;
+    border: white solid 1px;
+
+    transition: 300ms;
+}
+
+.inputSelected {
+    background-color: #343434;
+    color: white;
+    border: white dashed 2px
+
+}
+
+#currentFolderNameCont {
+    width: 100%;
+    display: flex;
+}
+
+#currentFolderNameCont > div:first-child {
+    border-bottom: white dashed 2px;
+}
+
+#removeFolderCont, .addFileCont{
+    margin-left: 32px;
+}
+
+#removeFolderCont>input, .addFileCont>input{
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+
+#removeFolderCont>input:hover{
+    background-color: red;
+    color: white;
+    transition: 300ms;
+}
+
+#addForm>input:last-child,
+#create_folder>input:last-child{
+    background-color: #7f0001;
+    color: white;
+    transition: 300ms;
+}
+
+#addForm>input:last-child:hover,
+#create_folder>input:last-child:hover{
+    background-color: white;
+    color: black;
+    transition: 300ms;
+}
+
+#currentFolderNameCont > div {
+    width: 165px;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+}
+
+#filesCont {
+    margin-left: 15px;
+}
+
+.fileRow > td {
+    height: 35px;
+    border-bottom: white solid 2px;
+}
+
+.fileInfo>form{
+    height: 101%;
+    width: 101%;
+}
+
+.downloadButton{
+    min-width: 70px;
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+
+.downloadButton:hover, .addFileCont>input:hover{
+    background-color: #555555;
+    color: white;
+
+    transition: 300ms;
+}
+
+td {
+    padding: 0 10px 0;
+}
+
+.fileInfo>input{
+    width: 100%;
+    min-width: 70px;
+    height: 100%;
+    color: white;
+    background-color: #7f0001;
+    transition: 300ms;
+}
+
+.fileInfo>input:hover{
+    color: white;
+    background-color: red;
+}
+
+#preloader>svg{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 150px;
+    width: 150px;
+}
+
+#preloader{
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: none;
+
+    background-color: rgba(0,0,0,0.81);
+}
+
+#addFolderFormCont, #addFileFormCont{
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    display: none;
+
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+    background-color: rgba(0,0,0,0.81);
+}
+
+#addFolderFormCont>div, #addFileFormCont>div{
+    z-index: 5;
+    min-width: 300px;
+    min-height: 100px;
+    border-radius: 10px;
+    background-color: #343434;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+#addFolderFormCont>div>form>input,
+#addFileFormCont>div>form>input{
+    width: 200px;
+    height: 35px;
+    border-radius: 2px;
+    margin-bottom: 2px;
+}
+#addFolderFormCont>div>form,
+#addFileFormCont>div>form{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#filterCont{
+    position: absolute;
+    left: 60px;
+    top: 130px;
+}
+
+.fileInfo>form{
+    margin: 0;
+}
+
+#filterForm>table>tbody>tr>td{
+    width: 150px;
+    height: 35px;
+}
+
+#filterForm>table>tbody>tr>td>input:hover{
+    background-color: #343434;
+    color: white;
+    border: white solid 1px;
+
+    transition: 300ms;
+}
+#filterForm>table>tbody>tr>td>input{
+    width: 100%;
+    height: 100%;
+    transition: 300ms;
+}
+
+#invCont{
+    position: absolute;
+    top: 300px;
+    left: 1100px;
+    width: 350px;
+    border: white solid 2px;
+}
+
+#Code{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+#invCodeGen>input{
+    width: 100%;
+    height: 30px;
+}
+
+#invCodeCont{
+    width: 100%;
+}
+
+#invCodeArticle{
+    height: 30px;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.invCode{
+    padding-left: 20px;
+    height: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#invCodeCont>.invCode:nth-child(even){
+    background-color: #636b6f;
+}
+
+
+
+
